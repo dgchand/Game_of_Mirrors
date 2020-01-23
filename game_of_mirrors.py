@@ -29,12 +29,18 @@ class Game:
 
     def ask_guess(self):
         #update the player_guess attribute based on input
+        print("What's the guess of coords of the exit?")
+        self.player_guess = input()
 
     def player_guess_to_coords(self):
         #use the string.split(',') method and string slicing to get coords
 
     def print_result(self):
         #prints message depending on if the game is won or not
+        if self.player_guess == self.grid:
+            print('You Win')
+        else:
+            print('You Lose!')
 
 
 class Grid:
