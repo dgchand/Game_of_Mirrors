@@ -24,7 +24,7 @@ class Game:
     def print_grid(self):
         #prints the grid with laser beam entry point
         A = create_grid()
-        print("The Matrix with Laser Beam Entry point")
+        print("The Matrix with Laser Beam Entry point (x,y)")
         print(A)
 
     def ask_guess(self):
