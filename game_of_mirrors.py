@@ -39,7 +39,7 @@ class Game:
 
     def print_result(self):
         #prints message depending on if the game is won or not
-        if self.player_guess == self.grid:
+        if int(self.player_guess.split(',')[0]) == self.exit_point[0] & int(self.player_guess.split(',')[1]) == self.exit_point[1]:
             print('You Win')
         else:
             print('You Lose!')
