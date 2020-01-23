@@ -14,9 +14,16 @@ class Game:
 
     def ask_difficulty(self):
         #update the difficulty attribute based on input
+        self.difficulty = raw_input("Select the level of difficulty: e- Easy, m- medium, d- difficult")		
 
     def create_grid(self):
         #create grid with parameters based on difficulty
+        '''
+        if self.difficulty = 'e':
+            self.grid =  ()
+        if self.difficulty = 'm':
+        if self.difficulty = 'd':
+        '''
 
     def compute_exit_point(self):
         #compute exit point of the laser beam
