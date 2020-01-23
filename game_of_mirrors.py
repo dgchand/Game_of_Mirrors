@@ -35,7 +35,8 @@ class Game:
 
     def ask_guess(self):
         #update the player_guess attribute based on input
-        print('Please choose the difficulty, H, M or E (for hard/medium/easy)?')
+        print("What's the guess of coords of the exit?")
+        self.player_guess = input()
 
     def player_guess_to_coords(self):
         #use the string.split(',') method and string slicing to get coord
@@ -43,7 +44,10 @@ class Game:
 
     def print_result(self):
         #prints message depending on if the game is won or not
-        pass
+        if self.player_guess == self.grid:
+            print('You Win')
+        else:
+            print('You Lose!')
 
 
 class Grid:
