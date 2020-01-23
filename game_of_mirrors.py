@@ -14,36 +14,27 @@ class Game:
 
     def ask_difficulty(self):
         #update the difficulty attribute based on input
-        self.difficulty = raw_input("Select the level of difficulty: e- Easy, m- medium, d- difficult")		
 
     def create_grid(self):
         #create grid with parameters based on difficulty
-        '''
-        if self.difficulty = 'e':
-            self.grid =  ()
-        if self.difficulty = 'm':
-        if self.difficulty = 'd':
-        '''
 
     def compute_exit_point(self):
         #compute exit point of the laser beam
-        pass
 
     def print_grid(self):
         #prints the grid with laser beam entry point
-        pass
+        A = create_grid()
+        print("The Matrix with Laser Beam Entry point")
+        print(A)
 
     def ask_guess(self):
         #update the player_guess attribute based on input
-        print('Please choose the difficulty, H, M or E (for hard/medium/easy)?')
 
     def player_guess_to_coords(self):
-        #use the string.split(',') method and string slicing to get coord
-        pass
+        #use the string.split(',') method and string slicing to get coords
 
     def print_result(self):
         #prints message depending on if the game is won or not
-        pass
 
 
 class Grid:
@@ -65,30 +56,24 @@ class Grid:
         # my_list = [<something> for i in ... for j in ...] to get the list of all coordinates
         # and the np.choice function to choose n INDEXES in the list.
         # Then select the elements corresponding to these indexes
-        pass
 
     def init_laser_beam(self):
         #initialize laser beam attributes
-        pass
 
 class LaserBeam:
     def __init__(self, initial_x, initial_y, ini_dir):
         self.init_pos = None #define with initial_x and initial_y
         self.init_direction = None #define with ini_dir
-        pass
 
     def is_in_grid(self, pos, W, H):
         #returns True if pos is in grid
-        pass
 
     def move(self, prev_pos, prev_dir, grid):
         #moves the laser beam for one step and returns (pos, dir, state) tuple
         # where state is 'moving' or 'stopping'
-        pass
 
     def find_exit_point(self, grid):
         #finds the exit point of the laser beam using the move function
-        pass
 
 if __name__ == '__main__':
     game = Game()
